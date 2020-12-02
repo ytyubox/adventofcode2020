@@ -11,7 +11,9 @@ public func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
     var cache = [Int: Int]()
     for (i, e) in nums.enumerated() {
         cache[target - e] = i
-        if let f = cache[e] { return [nums[f], e]}
+        if let f = cache[e] {
+            return [nums[f], e]
+        }
     }
     return []
 }

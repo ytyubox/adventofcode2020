@@ -12,6 +12,7 @@
 		9A36FADE2577D55B00240149 /* day01.input in Resources */ = {isa = PBXBuildFile; fileRef = 9A36FADD2577D55B00240149 /* day01.input */; };
 		9A36FAE22577D65200240149 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36FAE12577D65200240149 /* Helpers.swift */; };
 		9AF11B462577D7CF00D4C2E1 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */; };
+		9AF11B4A2577D8A600D4C2E1 /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF11B492577D8A600D4C2E1 /* ThreeSum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		9A36FADD2577D55B00240149 /* day01.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day01.input; sourceTree = "<group>"; };
 		9A36FAE12577D65200240149 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
+		9AF11B492577D8A600D4C2E1 /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				9A36FAC32577D51B00240149 /* Info.plist */,
 				9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */,
+				9AF11B492577D8A600D4C2E1 /* ThreeSum.swift */,
 			);
 			path = AdventOfCode2020;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF11B4A2577D8A600D4C2E1 /* ThreeSum.swift in Sources */,
 				9AF11B462577D7CF00D4C2E1 /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
