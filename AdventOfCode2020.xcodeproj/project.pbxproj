@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9A36FAC92577D51B00240149 /* AdventOfCode2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A36FABF2577D51B00240149 /* AdventOfCode2020.framework */; };
-		9A36FACE2577D51B00240149 /* AdventOfCode2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36FACD2577D51B00240149 /* AdventOfCode2020Tests.swift */; };
+		9A36FACE2577D51B00240149 /* Day01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36FACD2577D51B00240149 /* Day01Tests.swift */; };
 		9A36FADE2577D55B00240149 /* day01.input in Resources */ = {isa = PBXBuildFile; fileRef = 9A36FADD2577D55B00240149 /* day01.input */; };
+		9A36FAE22577D65200240149 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36FAE12577D65200240149 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +27,10 @@
 		9A36FABF2577D51B00240149 /* AdventOfCode2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A36FAC32577D51B00240149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A36FAC82577D51B00240149 /* AdventOfCode2020Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCode2020Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A36FACD2577D51B00240149 /* AdventOfCode2020Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2020Tests.swift; sourceTree = "<group>"; };
+		9A36FACD2577D51B00240149 /* Day01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01Tests.swift; sourceTree = "<group>"; };
 		9A36FACF2577D51B00240149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A36FADD2577D55B00240149 /* day01.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day01.input; sourceTree = "<group>"; };
+		9A36FAE12577D65200240149 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 		9A36FACC2577D51B00240149 /* AdventOfCode2020Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9A36FACD2577D51B00240149 /* AdventOfCode2020Tests.swift */,
+				9A36FACD2577D51B00240149 /* Day01Tests.swift */,
+				9A36FAE12577D65200240149 /* Helpers.swift */,
 				9A36FADD2577D55B00240149 /* day01.input */,
 				9A36FACF2577D51B00240149 /* Info.plist */,
 			);
@@ -201,7 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A36FACE2577D51B00240149 /* AdventOfCode2020Tests.swift in Sources */,
+				9A36FACE2577D51B00240149 /* Day01Tests.swift in Sources */,
+				9A36FAE22577D65200240149 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
