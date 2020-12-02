@@ -11,6 +11,7 @@
 		9A36FACE2577D51B00240149 /* Day01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36FACD2577D51B00240149 /* Day01Tests.swift */; };
 		9A36FADE2577D55B00240149 /* day01.input in Resources */ = {isa = PBXBuildFile; fileRef = 9A36FADD2577D55B00240149 /* day01.input */; };
 		9A36FAE22577D65200240149 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36FAE12577D65200240149 /* Helpers.swift */; };
+		9AF11B462577D7CF00D4C2E1 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		9A36FACF2577D51B00240149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A36FADD2577D55B00240149 /* day01.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day01.input; sourceTree = "<group>"; };
 		9A36FAE12577D65200240149 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9A36FAC32577D51B00240149 /* Info.plist */,
+				9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */,
 			);
 			path = AdventOfCode2020;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				TargetAttributes = {
 					9A36FABE2577D51B00240149 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					9A36FAC72577D51B00240149 = {
 						CreatedOnToolsVersion = 12.2;
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF11B462577D7CF00D4C2E1 /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +349,7 @@
 		9A36FAD42577D51B00240149 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -361,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ytyubox.AdventOfCode2020;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -368,6 +375,7 @@
 		9A36FAD52577D51B00240149 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -392,6 +400,7 @@
 		9A36FAD72577D51B00240149 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3AMPL46LPV;
@@ -410,6 +419,7 @@
 		9A36FAD82577D51B00240149 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3AMPL46LPV;

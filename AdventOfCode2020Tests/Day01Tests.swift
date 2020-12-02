@@ -6,16 +6,10 @@
 //
 
 import XCTest
+import AdventOfCode2020
 class Day01 {
     func result(_ list:[Int]) -> Int {
-        let const = 2020
-        var cache = [Int: Int]()
-        for (i, e) in list.enumerated() {
-            cache[const - e] = i
-            print(cache)
-            if let f = cache[e] { return list[f] * e}
-        }
-        return 0
+        twoSum(list, 2020).reduce(1, *)
     }
 }
 final class Day01Tests: XCTestCase {
@@ -25,11 +19,19 @@ final class Day01Tests: XCTestCase {
     }
     
     func testWithDataSet() throws {
+       
+        let sut = Day01()
+        let list = try getInputs()
+        XCTAssertEqual(sut.result(list), 651651)
+    }
+    func testDay01Part02() throws {
+        
+    }
+    typealias Inputs = [Int]
+    private func getInputs() throws -> Inputs {
         let name = "day01"
         let str = try getFileString(name)
-        let list = str.split(separator: .newLine).compactMap{Int($0)}
-        let sut = Day01()
-        XCTAssertEqual(sut.result(list), 651651)
+        return str.split(separator: .newLine).compactMap{Int($0)}
     }
 }
 
