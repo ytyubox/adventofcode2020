@@ -6,28 +6,41 @@
 //
 
 import XCTest
-@testable import AdventOfCode2020
-
-class AdventOfCode2020Tests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+class Day01 {
+    func result(_ list:[Int]) -> Int {
+        let const = 2020
+        var cache = [Int: Int]()
+        for (i, e) in list.enumerated() {
+            cache[const - e] = i
+            print(cache)
+            if let f = cache[e] { return list[f] * e}
         }
+        return 0
     }
+}
+final class Day01Tests: XCTestCase {
+    func testSample() {
+        let list = [1721,979,366,299,675,1456]
+        XCTAssertEqual(Day01().result(list), 514579)
+    }
+    
+    func testWithDataSet() throws {
+        let name = "day01"
+        let str = try getFileString(name)
+        let list = str.split(separator: .newLine).compactMap{Int($0)}
+        let sut = Day01()
+        XCTAssertEqual(sut.result(list), 651651)
+    }
+}
 
+extension XCTestCase {
+    func getFileString(_ name: String) throws -> String{
+        let url = try XCTUnwrap(Bundle(for: Self.self).url(forResource: name, withExtension: "input"))
+        let data = try Data(contentsOf: url)
+        return try XCTUnwrap(String(data: data, encoding: .utf8))
+    }
+    
+}
+extension Character {
+    static let newLine:Character = "\n"
 }
