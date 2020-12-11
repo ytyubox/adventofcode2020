@@ -1,0 +1,15 @@
+name: AdventOfCode2020
+targets:
+  AdventOfCode2020:
+    type: framework
+    platform: macOS
+    deploymentTarget: "10.15"
+    sources: [AdventOfCode2020]
+    scheme:
+      testTargets:
+        - AdventOfCode2020Tests
+  AdventOfCode2020Tests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "10.15"
+    sources: [AdventOfCode2020Tests]
