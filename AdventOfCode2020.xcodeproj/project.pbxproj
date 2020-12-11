@@ -13,6 +13,7 @@
 		9A36FAE22577D65200240149 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36FAE12577D65200240149 /* Helpers.swift */; };
 		9AF11B462577D7CF00D4C2E1 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */; };
 		9AF11B4A2577D8A600D4C2E1 /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF11B492577D8A600D4C2E1 /* ThreeSum.swift */; };
+		A7136596258386FF00970341 /* Day02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7136595258386FF00970341 /* Day02Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		9A36FAE12577D65200240149 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		9AF11B492577D8A600D4C2E1 /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
+		A7136595258386FF00970341 /* Day02Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +89,29 @@
 		9A36FACC2577D51B00240149 /* AdventOfCode2020Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9A36FACD2577D51B00240149 /* Day01Tests.swift */,
+				A7136592258386F200970341 /* Day02 */,
+				A713658D258386EE00970341 /* Day01 */,
 				9A36FAE12577D65200240149 /* Helpers.swift */,
-				9A36FADD2577D55B00240149 /* day01.input */,
 				9A36FACF2577D51B00240149 /* Info.plist */,
 			);
 			path = AdventOfCode2020Tests;
+			sourceTree = "<group>";
+		};
+		A713658D258386EE00970341 /* Day01 */ = {
+			isa = PBXGroup;
+			children = (
+				9A36FACD2577D51B00240149 /* Day01Tests.swift */,
+				9A36FADD2577D55B00240149 /* day01.input */,
+			);
+			path = Day01;
+			sourceTree = "<group>";
+		};
+		A7136592258386F200970341 /* Day02 */ = {
+			isa = PBXGroup;
+			children = (
+				A7136595258386FF00970341 /* Day02Tests.swift */,
+			);
+			path = Day02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +234,7 @@
 			files = (
 				9A36FACE2577D51B00240149 /* Day01Tests.swift in Sources */,
 				9A36FAE22577D65200240149 /* Helpers.swift in Sources */,
+				A7136596258386FF00970341 /* Day02Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -339,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
