@@ -4,7 +4,7 @@ targets:
     type: framework
     platform: macOS
     deploymentTarget: "10.15"
-    sources: [AdventOfCode2020]
+    sources: [Library]
     scheme:
       testTargets:
         - AdventOfCode2020Tests
@@ -12,4 +12,4 @@ targets:
     type: bundle.unit-test
     platform: macOS
     deploymentTarget: "10.15"
-    sources: [AdventOfCode2020Tests]
+    sources: [Tests]
