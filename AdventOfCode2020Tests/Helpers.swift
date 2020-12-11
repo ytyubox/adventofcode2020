@@ -28,6 +28,9 @@ extension String {
     func split(_ char: Character) -> [String] {
         split(separator: char).map(\.description)
     }
+    var characters:[Character] {
+        map{$0}
+    }
 }
 
 func stoRange(_ str: String) -> ClosedRange<Int> {
