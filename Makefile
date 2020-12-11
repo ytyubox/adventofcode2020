@@ -1,10 +1,12 @@
 
 
-# test: 
-# 	xcodebuild build test -scheme AdventOfCode2020 2>&1 | grep failed
-
 gen: 
 	xcodegen generate
+
+
+test: 
+	xcodebuild build test -scheme AdventOfCode2020
+
 
 init:
 	git config core.hooksPath .githooks
