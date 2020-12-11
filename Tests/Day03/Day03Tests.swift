@@ -1,7 +1,46 @@
 import XCTest
 
-class Day03: Answer {
-    func answer() -> String {}
+struct Day03: Answer {
+    let list: List
+    func answer() -> String {
+        let (vx, vy) = (3, 1)
+        var c = 0
+        var (px, py) = (0, 0)
+        let width = list.first?.count
+        let _list = list.map(\.characters)
+        while true {
+            if py >= list.count { return c.description }
+            if _list[py][px] == "#" { c += 1 }
+            px = px.step(vx, max: width)
+            py = py.step(vy, max: nil)
+        }
+    }
 
-    func answer2() -> String {}
+    func answer2() -> String { "" }
+}
+
+class Day03Tests: XCTestCase {
+    func test() {
+        let list = [
+            "..##.........##.........##.........##.........##.........##.......",
+            "#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..",
+            ".#....#..#..#....#..#..#....#..#..#....#..#..#....#..#..#....#..#.",
+            "..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#",
+            ".#...##..#..#...##..#..#...##..#..#...##..#..#...##..#..#...##..#.",
+            "..#.##.......#.##.......#.##.......#.##.......#.##.......#.##.....",
+            ".#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#",
+            ".#........#.#........#.#........#.#........#.#........#.#........#",
+            "#.##...#...#.##...#...#.##...#...#.##...#...#.##...#...#.##...#...",
+            "#...##....##...##....##...##....##...##....##...##....##...##....#",
+            ".#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#",
+        ]
+        let sut = Day03(list: list)
+        XCTAssertEqual(sut.answer(), "7")
+    }
+
+    func testSample() throws {
+        let list = try inputOf("day03").lined()
+        let sut = Day03(list: list)
+        XCTAssertEqual(sut.answer(), "71")
+    }
 }

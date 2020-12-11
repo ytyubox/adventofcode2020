@@ -39,3 +39,20 @@ func stoRange(_ str: String) -> ClosedRange<Int> {
     let l = str.split(c).compactMap(Int.init)
     return l[0] ... l[1]
 }
+
+extension Int {
+    func step(_ int: Int, max: Int? = nil) -> Int {
+        guard let max = max else { return self + int }
+        let a = self + int
+        let overhead = a - max
+        return overhead > 0 ? a - overhead - 1 : a
+    }
+}
+
+class testHelperTests: XCTestCase {
+    func test() {
+        let x = 15
+        let width = 20
+        XCTAssertEqual(x.step(6, max: width), 19)
+    }
+}

@@ -7,6 +7,7 @@
 // Running on macOS 10.15
 
 import XCTest
+typealias List = [String]
 protocol Answer {
     func answer() -> String
     func answer2() -> String
