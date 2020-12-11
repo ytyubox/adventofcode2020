@@ -40,7 +40,7 @@ final class Day01Tests: XCTestCase {
     typealias Inputs = [Int]
     private func getInputs() throws -> Inputs {
         let name = "day01"
-        let str = try getFileString(name)
+        let str = try inputOf(name)
         return str.split(separator: .newLine).compactMap{Int($0)}
     }
 }

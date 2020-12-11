@@ -14,6 +14,7 @@
 		9AF11B462577D7CF00D4C2E1 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */; };
 		9AF11B4A2577D8A600D4C2E1 /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF11B492577D8A600D4C2E1 /* ThreeSum.swift */; };
 		A7136596258386FF00970341 /* Day02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7136595258386FF00970341 /* Day02Tests.swift */; };
+		A71365A22583875F00970341 /* day02.input in Resources */ = {isa = PBXBuildFile; fileRef = A71365A12583875F00970341 /* day02.input */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		9AF11B452577D7CF00D4C2E1 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		9AF11B492577D8A600D4C2E1 /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
 		A7136595258386FF00970341 /* Day02Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02Tests.swift; sourceTree = "<group>"; };
+		A71365A12583875F00970341 /* day02.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day02.input; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A7136595258386FF00970341 /* Day02Tests.swift */,
+				A71365A12583875F00970341 /* day02.input */,
 			);
 			path = Day02;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A36FADE2577D55B00240149 /* day01.input in Resources */,
+				A71365A22583875F00970341 /* day02.input in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
