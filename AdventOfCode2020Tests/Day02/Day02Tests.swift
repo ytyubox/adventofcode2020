@@ -44,8 +44,13 @@ struct Day02:Answer {
         }
         var check2: Bool {
             
-            input[range.lowerBound - 1] == char &&
-            input[range.upperBound - 1] != char
+            (input[range.lowerBound - 1] == char &&
+              input[range.upperBound - 1] != char) ||
+            (
+                input[range.lowerBound - 1] != char &&
+                  input[range.upperBound - 1] == char
+            )
+            
                 
         }
         
@@ -82,6 +87,6 @@ class Day02Tests: XCTestCase {
     func testSample2() throws {
         let list = try inputOf("day02").lined()
         let sut = Day02(list: list)
-        XCTAssertEqual(sut.answer2(),"325")
+        XCTAssertEqual(sut.answer2(),"688")
     }
 }
